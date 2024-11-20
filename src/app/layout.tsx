@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 		icon: '/icon.svg',
 	},
 	twitter: {
-		title: 'AméliaZz (dev)',
-		description: 'Your Next Web Front-End developer.',
-		images: ['https://r2.ameliazz.xyz/avatar.png'],
+		title: 'Am.',
+		description: 'your next developer.',
+		images: ['https://ameliazz.xyz/avatar.png'],
 	},
 	openGraph: {
-		title: 'AméliaZz (dev)',
-		description: 'Your Next Web Front-End developer.',
+		title: 'Am.',
+		description: 'your next developer.',
 		images: [
 			{
 				url: '/avatar.png',
