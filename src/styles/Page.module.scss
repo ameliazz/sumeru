@@ -233,7 +233,9 @@
     background: rgb(14, 14, 14, 0.6);
     color: rgba(255, 255, 255, 0.6);
 
-    width: 16rem;
+    width: 100%;
+    max-width: 16rem;
+
     height: 100%;
     padding: 1rem 2rem;
     transition: 0.6s;
@@ -248,7 +250,7 @@
             content: "";
             width: 0%;
             height: 1px;
-            margin-top: -2px;
+            margin-top: 2px;
             display: block;
             background: rgba(230, 230, 230, 0.6);
             transition: 300ms;
@@ -285,7 +287,7 @@
     animation-duration: 4s;
 }
 
-.about__container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,7 +302,7 @@
         width: fit-content;
     }
 
-    #content__container {
+    .content__container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -333,47 +335,60 @@ div.child {
     .hero__container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-
-        .inner__container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            border-radius: 0;
-            padding: 3rem;
-            border-right: none;
-            border-bottom: 1px solid #ffffff21;
-        }
-
-        .second__inner__container {
-            padding: 2rem;
-        }
-
-        .cards__container {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-auto-flow: row;
-        }
     }
 
-    .about__container {
+    .inner__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 0;
+        padding: 3rem;
+        border-right: none;
+        border-bottom: 1px solid #ffffff21;
+    }
+
+    .second__inner__container {
+        padding: 2rem;
+    }
+
+    .cards__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+
+    .container {
         padding: 1rem 3rem;
 
-        #content__container {
+        .content__container {
             gap: 2rem;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-auto-flow: row;
         }
     }
+
+    .container {
+        .card {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
     .hero__container {
-        grid-template-columns: 1.4fr 0.6fr;
+        grid-template-columns: 1fr 0.6fr;
+        .cards__container .card:last-child {
+            display: none;
+        }
     }
 
-    .cards__container .card:last-child {
-        display: none;
+    .container {
+        .card {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 }

@@ -13,7 +13,7 @@ export default () => {
 			<div>
 				<h1>
 					Am
-					<span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>.</span>
+					<span style={{ color: '#ffffffb3' }}>.</span>
 				</h1>
 			</div>
 
@@ -38,7 +38,7 @@ export default () => {
 					<Link href="#about" className={Styles.link}>
 						Sobre
 					</Link>
-					<Link href="#" className={Styles.link}>
+					<Link href="#projects" className={Styles.link}>
 						Projetos
 					</Link>
 
