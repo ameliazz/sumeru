@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata, Viewport } from 'next'
 
 import '../styles/main.scss'
@@ -57,7 +58,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
-			<body>{children}</body>
+			<body>
+				{children}
+				<SpeedInsights />
+			</body>
 		</html>
 	)
 }
